@@ -658,9 +658,10 @@ a {
 
 .story__photo-item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 3;
   object-fit: cover;
   transition: transform var(--transition-slow);
+  object-position: center top;
 }
 
 .story__photo-item:hover img {
