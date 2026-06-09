@@ -39,7 +39,7 @@ const CONFIG = {
     date: "2026-08-08",
     time: "13:00",
     venue: "JK아트컨벤션",
-    hall: "아트리움홀 4층",
+    hall: "4층 아트리움홀",
     address: "서울특별시 영등포구 문래로 164",
     tel: "02-2628-9100",
     mapLinks: {
