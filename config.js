@@ -66,7 +66,7 @@ const CONFIG = {
   // ── 마음 전하실 곳 ──
   accounts: {
     groom: [
-      { role: "신랑", name: "문인태", bank: "신한은행", number: "110-439-308470" },
+      { role: "신랑", name: "문인태", bank: "토스뱅크", number: "1000-1315-0255" },
       { role: "아버지", name: "문성일", bank: "농협은행", number: "171405-52-078120" },
       { role: "어머니", name: "박정미", bank: "농협은행", number: "170972-56-007117" }
     ],
