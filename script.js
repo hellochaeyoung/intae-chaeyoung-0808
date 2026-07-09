@@ -517,17 +517,47 @@
   let touchStartY = 0;
   let touchEndY = 0;
 
+  // function openPhotoModal(images, index) {
+  //   modalImages = images;
+  //   modalIndex = index;
+  //   showModalImage();
+  //   $('#photoModal').classList.add('is-open');
+  //   document.body.classList.add('no-scroll');
+  // }
+
+  // function closePhotoModal() {
+  //   $('#photoModal').classList.remove('is-open');
+  //   document.body.classList.remove('no-scroll');
+  // }
+
+  let modalScrollY = 0;
+
   function openPhotoModal(images, index) {
+    modalScrollY = window.scrollY;
+
     modalImages = images;
     modalIndex = index;
     showModalImage();
+
     $('#photoModal').classList.add('is-open');
-    document.body.classList.add('no-scroll');
+
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${modalScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
   }
 
   function closePhotoModal() {
     $('#photoModal').classList.remove('is-open');
-    document.body.classList.remove('no-scroll');
+
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+
+    window.scrollTo(0, modalScrollY);
   }
 
   function showModalImage() {
